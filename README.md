@@ -1,2 +1,7 @@
-# django-flutter-todo
-Todo application made with Flutter (Front-end) and Django (Back end)
+# Todo Application
+Todo application made with:
+ - Flutter (Cross-platform SDK)
+ - Provider (State-management library for Flutter)
+ - Django (Back-end REST API)
+
+ *More details coming soon.*
