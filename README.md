@@ -12,7 +12,34 @@ Todo application made with:
 - Delete a task
 - View incomplete tasks
 - View complete tasks
- *More details coming soon.*
+
+## Setup
+```bash
+# clone the project
+git clone git@github.com:ReeceRose/django-flutter-todo.git djang-flutter-todo
+# install pipenv if not installed already
+pip install pipenv
+# install all python packages
+pipenv install -r requirements.txt
+pipenv shell
+
+# setup backend
+cd Backend
+# make / apply all migrations
+python manage.py makemigrations
+python manage.py migrate
+# create new super user
+python manage.py createsuperuser
+# run python server (http://localhost:8000)
+python manage.py runserver
+
+# open new terminal and go to the Mobile folder to setup front-end
+cd Mobile
+# get flutter packages
+flutter packages get
+# run Flutter project
+flutter run
+```
 
 ## Screenshots
 ![Home screen](https://static.reecerose.com/images/projects/provider-todos/HomeScreen.png)
